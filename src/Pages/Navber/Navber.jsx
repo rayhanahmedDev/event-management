@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import '../../../public/logo.png'
 
 
 const Navber = () => {
@@ -20,7 +21,7 @@ const Navber = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-[#FFFFFF] md:px-12">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +31,7 @@ const Navber = () => {
                           {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Event ManageMent</a>
+                    <img className='h-[90px]' src="logo.png" alt="" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -38,6 +39,9 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    {
+                        user?.email                    
+                    }
                    {
                     user ? <button onClick={handleLogOut} className="btn btn-outline btn-secondary">LogOut</button>
                     : <Link to='/login'><button onClick={handleLogOut} className="btn btn-outline btn-secondary">Login</button></Link>

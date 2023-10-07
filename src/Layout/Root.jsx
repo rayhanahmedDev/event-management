@@ -5,11 +5,11 @@ import Footer from "../Pages/Footer/Footer";
 
 const Root = () => {
     return (
-        <div>
-            <div className="max-w-7xl mx-auto">
-                <Navber></Navber>
-                <Outlet></Outlet>
+        <div className="bg-[#F5F5F6]">
+            <div className="max-w-[1540px] mx-auto">
+            <Navber></Navber>                      
             </div>
+            <Outlet></Outlet>         
             <Footer></Footer>
         </div>
     );
