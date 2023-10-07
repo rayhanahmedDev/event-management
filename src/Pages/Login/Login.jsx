@@ -1,12 +1,15 @@
 import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
 
     const {googleSingUp,signIn} = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
+
 
     const handleSignIn = e =>{
         e.preventDefault()
@@ -17,6 +20,7 @@ const Login = () => {
         signIn(email,password)
         .then(result =>{
             console.log(result.user)
+            navigate(location?. state? location.state : '/')
         })
         .catch(error =>{
             console.error(error)
@@ -43,13 +47,13 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="Your Email" className="input border border-[#CC009C]" required />
+                                <input type="email" name="email" placeholder="Your Email" className="input border border-[#CC009C]" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="Your Password" className="input border border-[#CC009C]" required />
+                                <input type="password" name="password" placeholder="Your Password" className="input border border-[#CC009C]" required />
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-outline  btn-secondary">Login</button>
