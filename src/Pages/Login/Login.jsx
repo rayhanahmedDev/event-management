@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+
+    const [loginError, setLoginError] = useState('')
+    const [success, setSuccess] = useState('')
 
     const {googleSingUp,signIn} = useContext(AuthContext)
     const location = useLocation()
@@ -16,14 +19,19 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email,password)
+        setLoginError('')
+        setSuccess('')
 
         signIn(email,password)
         .then(result =>{
             console.log(result.user)
             navigate(location?. state? location.state : '/')
+            setSuccess('You Are Login Successfully ')
+            
         })
         .catch(error =>{
             console.error(error)
+            setLoginError(error.message)
         })
     }
 
@@ -62,7 +70,14 @@ const Login = () => {
                          <button onClick={handleGoogle} className="btn w-full btn-outline btn-secondary"> <FcGoogle className='text-[31px]'></FcGoogle> Login With Google</button>
                         </div>
                         <p className='text-center'>Don’t have an account?<Link to='/register' className="text-[#CC009C] font-bold">Register</Link></p>
-                        </form>                    
+                        {
+                            loginError && <p>{loginError}</p>
+                        } 
+                        {
+                            success && <p>{success}</p>
+                        }
+                        </form> 
+                                         
                 </div>
             </div>
         </div>

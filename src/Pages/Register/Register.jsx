@@ -1,10 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
     
+    const [registerError, setRegisterError] = useState('')
+    const [success, setSuccess] = useState('')
+
     const {googleSingUp,createUser} = useContext(AuthContext)
 
     const handleRegister = e =>{
@@ -13,13 +16,31 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email,password,name)
+        setRegisterError('')
+        setSuccess('')
+
+        // error handling
+        if(password.length < 6){
+            setRegisterError('Password should be At Least 6 characters or longer')
+            return;
+        }
+        if (!/[A-Z]/.test(password)) {
+            setRegisterError('Your password should have one upperCase')
+            return;
+          }
+          if (!/[!@#$%^&*()_+{}[\]:;<>,.?~\\]/.test(password)) {
+            setRegisterError('Your password should have one Special Character')
+            return;
+          }
 
         createUser(email,password)
         .then(result =>{
             console.log(result.user)
+            setSuccess('Your Register Successfully')
         })
         .catch(error =>{
             console.error(error)
+            setRegisterError(error.message)
         })
     }
 
@@ -63,6 +84,12 @@ const Register = () => {
                          <button onClick={handleGoogle} className="btn w-full btn-outline btn-secondary"> <FcGoogle className='text-[31px]'></FcGoogle> Register With Google</button>
                         </div>
                         <p className='text-center'>Already have an account?<Link to='/login' className="text-[#CC009C] font-bold">Login</Link></p>
+                        {
+                            registerError && <p className='text-center text-[#FF0000]'>{registerError}</p>
+                        }
+                        {
+                            success && <p className='text-center text-[#CC009C]'>{success}</p>
+                        }
                     </form>
                     
                 </div>
