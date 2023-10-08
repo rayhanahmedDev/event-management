@@ -23,7 +23,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<PrivateRoute><Home></Home></PrivateRoute>
+        element:<PrivateRoute><Home></Home></PrivateRoute>,
+        loader : () => fetch('/public/data.json')
       },
       {
         path:'/login',

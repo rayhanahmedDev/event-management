@@ -1,0 +1,45 @@
+ [
+      {
+        "id": 1,
+        "name": "Elegant Garden Wedding",
+        "image": "https://i.ibb.co/Sx934b8/Enchanted-Garden-Party.jpg",
+        "price": 299.99,
+        "description": "A romantic outdoor wedding set in a lush garden with blooming flowers, a grand arch, and soft candlelit ambiance."
+      },
+      {
+        "id": 2,
+        "name": "Superhero Adventure Bash",
+        "image": "https://i.ibb.co/VvhdrDf/Superhero-Adventure-Bash.jpg",
+        "price": 249.99,
+        "description": "An action-packed birthday party where kids can become their favorite superheroes.complete with thrilling challenges"
+      },
+      {
+        "id": 3,
+        "name": "Golden Anniversary Dinner",
+        "image": "https://i.ibb.co/Gv1gVKs/Golden-Anniversary-Dinner.jpg",
+        "price": 199.99,
+        "description": "An intimate dinner gathering to mark 50 years of wedded bliss, with heartfelt toasts and family memories."
+      },
+      {
+        "id": 4,
+        "name": "Engagement Garden Soiree",
+        "image": "https://i.ibb.co/GQF6qkJ/Engagement-Garden-Soiree.jpg",
+        "price": 229.99,
+        "description":  "A charming garden party to celebrate the newly engaged couple with floral arrangements and champagne toasts."
+      },
+      {
+        "id": 5,
+        "name": "Retirement Roast and Toast",
+        "image": "https://i.ibb.co/86mtjjk/Retirement-Toast-1.jpg",
+        "price": 179.99,
+        "description":  "A serene retreat-style retirement party, where the retiree can unwind and reflect on their career journey."
+      },
+      {
+        "id": 6,
+        "name": "Gender Reveal Garden Party",
+        "image": "https://i.ibb.co/72Kx72W/Gender-Reveal-Garden-Party.jpg",
+        "price": 299.99,
+        "description": "A garden party to reveal the baby's gender, with suspense and excitement as the big moment approaches."
+      }
+    ]
+  
