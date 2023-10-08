@@ -1,0 +1,22 @@
+[
+    {
+      "id": "12345",
+      "title": "I invited these event planner to arrange a bachelor party for my best friend!",
+      "img": "https://example.com/images/villa1.jpg",
+      "name": "John Smith"
+    },
+    {
+      "id": "67890",
+      "title": "I invited these event planner to arrange a bachelor party for my best friend!",
+      "img": "https://example.com/images/cabin2.jpg",
+      "name": "Emily Davis"
+    },
+    {
+      "id": "54321",
+      "title": "I invited these event planner to arrange a bachelor party for my best friend!",
+      "img": "https://example.com/images/apartment3.jpg",
+      "name": "Michael Johnson"
+    }
+  ]
+  
+  
