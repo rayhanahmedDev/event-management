@@ -39,6 +39,7 @@ const Login = () => {
     const handleGoogle = ()=>{
         googleSingUp()
         .then(result =>{
+            navigate(location?. state? location.state : '/')
             console.log(result.user)
         })
         .catch(error =>{

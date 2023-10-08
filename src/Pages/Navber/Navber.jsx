@@ -9,7 +9,7 @@ import './Navber.css'
 const Navber = () => {
 
     const {logOut,user} = useContext(AuthContext)
-
+    console.log(user)
     const handleLogOut = ()=>{
         logOut()
         .then()
@@ -43,7 +43,7 @@ const Navber = () => {
                 </nav>
                 <div className="navbar-end">
                     {
-                        user?.email                    
+                        user?.displayName                    
                     }
                    {
                     user ? <button onClick={handleLogOut} className="btn btn-outline btn-secondary">LogOut</button>
