@@ -18,8 +18,9 @@ const Home = () => {
             </div>
             <div className='max-w-7xl mx-auto mt-12'>
                 <h2 className='text-3xl font-bold text-center'>Our Services</h2>
+                <p className='text-center mt-2 text-[#A3A3A6]'>We Are The Best</p>
                 {/* card section */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-12'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-12'>
                     {
                         dataLoader.map(card => <Cards key={card.id} card={card}></Cards>)
                     }

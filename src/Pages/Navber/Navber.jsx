@@ -18,6 +18,7 @@ const Navber = () => {
 
     const links = <> 
        <li><NavLink className='mr-4' to='/'>Home</NavLink></li>
+       <li><NavLink className='mr-4' to='/services'>Services</NavLink></li>
         <li><NavLink className='mr-4' to='/login'>Login</NavLink></li>
         <li><NavLink className='mr-4' to='/register'>Register</NavLink></li>
     </>

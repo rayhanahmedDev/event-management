@@ -4,14 +4,14 @@
         "name": "Elegant Garden Wedding",
         "image": "https://i.ibb.co/Sx934b8/Enchanted-Garden-Party.jpg",
         "price": 299.99,
-        "description": "A romantic outdoor wedding set in a lush garden with blooming flowers, a grand arch, and soft candlelit ambiance."
+        "description": "A romantic outdoor wedding set in a lush garden with blooming flowers, a grand arch, and soft candlelit."
       },
       {
         "id": 2,
         "name": "Superhero Adventure Bash",
         "image": "https://i.ibb.co/VvhdrDf/Superhero-Adventure-Bash.jpg",
         "price": 249.99,
-        "description": "An action-packed birthday party where kids can become their favorite superheroes.complete with thrilling challenges"
+        "description": "An action-packed birthday party where kids can become their favorite superheroes.complete with thrilling"
       },
       {
         "id": 3,
