@@ -10,7 +10,7 @@ const Home = () => {
     const [testData, setTestData] = useState([])
 
     useEffect(() => {
-        fetch('testData.json')
+        fetch('/testData.json')
             .then(res => res.json())
             .then(data => setTestData(data))
     }, [])
@@ -34,7 +34,7 @@ const Home = () => {
                 {/* card section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12'>
                     {
-                        dataLoader.map(card => <Cards key={card.id} card={card}></Cards>)
+                        !!dataLoader && dataLoader.map(card => <Cards key={card.id} card={card}></Cards>)
                     }
                 </div>
             </div>
