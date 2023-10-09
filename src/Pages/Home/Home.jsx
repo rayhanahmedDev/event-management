@@ -36,15 +36,30 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div  className='h-[80vh] bg-white max-w-[1540px] px-48 mt-16 pt-12'>
-                <div>
+            <div  className='bg-[#F5F5F6] lg:h-[70vh] lg:max-w-[1540px] md:max-w-6xl max-w-sm lg:px-48 mx-14 mt-12 pt-12'>              
                 <h2 className='text-5xl font-bold text-center'>Testimonials</h2>
                 <p className='text-center text-[12px] font-bold mt-4 text-[#A3A3A6]'>HAPPY CLIENTS ABOUT US</p>
-                </div>
+               
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12'>
                     {
                         testData.map(test => <Test key={test.id} test={test}></Test>)
                     }
+                </div>
+            </div>
+            <div className='bg-[#75C1D1] lg:h-[80vh] mt-8 lg:max-w-[1540px] md:max-w-6xl max-w-sm lg:px-48 py-16 px-14 mx-14 lg:mx-0'>
+                <div>
+                <h2 className='text-5xl font-bold text-white text-center'>Online Request</h2>
+                <p className='text-center text-[12px] text-white font-bold mt-4 '>DROP US A FEW LINES</p>
+                </div>
+                <div className='flex flex-wrap justify-center  gap-4 mt-8 h-[56px]'>
+                    <input className='w-[300px] rounded-full pl-8 text-[16px] font-bold' placeholder='Name*' type="text" name="" id="" />
+                    <input className='w-[300px] pl-8 text-[16px] font-bold rounded-full' placeholder='Phone*' type="number" name="" id="" />
+                </div>
+                <div className='flex flex-wrap justify-center mt-8'>
+                    <textarea className='rounded-3xl lg:pt-4 pl-8 text-[16px] font-bold' name="" placeholder='Message*' id="" cols="71" rows="5"></textarea>
+                </div>
+                <div className='text-center mt-8 '>
+                <button className='btn bg-[#D67F7F] lg:w-[130px] border-[#D67F7F] text-white text-sm rounded-full'>Send</button>
                 </div>
             </div>
         </div>
