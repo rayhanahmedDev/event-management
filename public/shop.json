@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/CByztZB/product-9-370x370.jpg",
+      "name": "One-year-old Piece",
+      "price": 59.99
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/n89Jt3C/product-1-370x370.jpg",
+      "name": "Happy Birthday Balloons",
+      "price": 34.95
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/Lkwytsm/product-3-370x370.jpg",
+      "name": "Colorful Balloons",
+      "price": 49.99
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/nB6dBcN/product-13-370x370.jpg",
+      "name": "Bundle of Lollies",
+      "price": 79.99
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/W33pGsd/product-7-370x370.jpg",
+      "name": "Birthday Centerpiece",
+      "price": 19.95
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/kgwchWJ/product-2-370x370.jpg",
+      "name": "Birthday Balloons",
+      "price": 89.99
+    }
+  ]
+  

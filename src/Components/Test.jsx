@@ -6,7 +6,7 @@ const Test = ({ test }) => {
     return (
         <div>
 
-            <div className=" p-6 border border-gray-200 rounded-3xl drop-shadow-lg bg-white py-8">
+            <div className=" p-6 border border-gray-200 rounded-3xl shadow bg-white py-8">
                 <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
                 <div className='avatar flex justify-center mt-8 items-center gap-4'>
                     <div className="w-14 rounded-full ">

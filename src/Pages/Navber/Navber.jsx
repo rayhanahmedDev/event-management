@@ -18,13 +18,14 @@ const Navber = () => {
 
     const links = <> 
        <li><NavLink className='mr-4' to='/'>Home</NavLink></li>
-       <li><NavLink className='mr-4' to='/services'>Services</NavLink></li>
+       <li><NavLink className='mr-4' to='/shop'>Shop</NavLink></li>
+       <li><NavLink className='mr-4' to='/blog'>Blog</NavLink></li>
         <li><NavLink className='mr-4' to='/login'>Login</NavLink></li>
         <li><NavLink className='mr-4' to='/register'>Register</NavLink></li>
     </>
     return (
         <div>
-            <div className="navbar bg-white md:px-16">
+            <div className="navbar bg-white md:px-16 py-8">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -34,7 +35,8 @@ const Navber = () => {
                           {links}
                         </ul>
                     </div>
-                    <img className='h-[90px]' src="logo.png" alt="" />
+                    {/* <img className='h-[90px]' src="logo.png" alt="" /> */}
+                    <h2 className="text-3xl font-bold"><span className="text-[#ed22bd]">Social</span> Event</h2>
                 </div>
                 <nav className="navbar-center hidden lg:flex">
                     <ul className=" menu-horizontal px-1">
