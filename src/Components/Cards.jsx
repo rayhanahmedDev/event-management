@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 const Cards = ({ card }) => {
     const { id, name, image, price, description } = card;
     return (
-        <div className="">
+        <div className="" data-aos="fade-up"
+        data-aos-duration="2000">
             <div className=" bg-white border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <img className="rounded-t-lg w-full lg:h-52 md:h-52" src={image} alt="" />
                 <div className="p-5">

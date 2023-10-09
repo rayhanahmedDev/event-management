@@ -19,9 +19,10 @@ const Home = () => {
             <div className="hero md:h-[85vh]" style={{ backgroundImage: 'url(banner.png)' }}>
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-center text-neutral-content">
-                    <div className="">
+                    <div className="" data-aos="fade-up"
+                        data-aos-duration="3000">
                         <h1 className="mb-5 text-5xl font-bold text-white">We Create
-                           <br /> <span className='text-[#ed22bd]'>You <br /></span> Celebrate</h1>
+                            <br /> <span className='text-[#ed22bd]'>You <br /></span> Celebrate</h1>
                         <p className='text-center max-w-xl text-white'>Social event management is the art of orchestrating celebrations and gatherings that leave a lasting impression on guests, ensuring every detail is meticulously planned.</p>
                         <button className='btn mt-4 text-white  bg-[#ed22bd] border-[#ed22bd]'>Online Request</button>
                     </div>
@@ -47,7 +48,8 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div className='bg-[#75C1D1] lg:h-[80vh] mt-8 lg:max-w-[1540px] md:max-w-6xl max-w-sm lg:px-48 py-16 px-14 lg:mx-0'>
+            <div className='bg-[#75C1D1] lg:h-[80vh] mt-8 lg:max-w-[1540px] max-w-6xl lg:px-48 py-16 px-14 lg:mx-0' data-aos="fade-up"
+                data-aos-duration="2000">
                 <div>
                     <h2 className='text-5xl font-bold text-white text-center'>Online Request</h2>
                     <p className='text-center text-[12px] text-white font-bold mt-4 '>DROP US A FEW LINES</p>
